@@ -7,7 +7,7 @@ var server=http.createServer(function(req, res){
         res.writeHead(200, {'Content-Type': 'text/html'});
         fs.createReadStream(__dirname+'/index.html').pipe(res);
     }
-    else if(req.url==='/api/ninjas'){
+    else if(req.url==='/api/ninjas1s'){
         var ninjas =[{name:'ryu',age:29},{name:'Pushpesh',age:19}]
         res.writeHead(200, {'Content-Type': 'application/json'});
         res.end(JSON.stringify(ninjas))
